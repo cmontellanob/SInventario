@@ -30,6 +30,11 @@
         {
             this.button1 = new System.Windows.Forms.Button();
             this.lblEstado = new System.Windows.Forms.Label();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.configuracionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.productosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.unidadesMedidaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // button1
@@ -52,15 +57,53 @@
             this.lblEstado.Text = "desconectado";
             this.lblEstado.Click += new System.EventHandler(this.label1_Click);
             // 
+            // menuStrip1
+            // 
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.configuracionToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(969, 24);
+            this.menuStrip1.TabIndex = 2;
+            this.menuStrip1.Text = "menuStrip1";
+            this.menuStrip1.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.menuStrip1_ItemClicked);
+            // 
+            // configuracionToolStripMenuItem
+            // 
+            this.configuracionToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.productosToolStripMenuItem,
+            this.unidadesMedidaToolStripMenuItem});
+            this.configuracionToolStripMenuItem.Name = "configuracionToolStripMenuItem";
+            this.configuracionToolStripMenuItem.Size = new System.Drawing.Size(95, 20);
+            this.configuracionToolStripMenuItem.Text = "Configuracion";
+            // 
+            // productosToolStripMenuItem
+            // 
+            this.productosToolStripMenuItem.Name = "productosToolStripMenuItem";
+            this.productosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.productosToolStripMenuItem.Text = "Productos";
+            this.productosToolStripMenuItem.Click += new System.EventHandler(this.productosToolStripMenuItem_Click);
+            // 
+            // unidadesMedidaToolStripMenuItem
+            // 
+            this.unidadesMedidaToolStripMenuItem.Name = "unidadesMedidaToolStripMenuItem";
+            this.unidadesMedidaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.unidadesMedidaToolStripMenuItem.Text = "Unidades Medida";
+            this.unidadesMedidaToolStripMenuItem.Click += new System.EventHandler(this.unidadesMedidaToolStripMenuItem_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(969, 566);
             this.Controls.Add(this.lblEstado);
             this.Controls.Add(this.button1);
+            this.Controls.Add(this.menuStrip1);
+            this.MainMenuStrip = this.menuStrip1;
             this.Name = "Form1";
             this.Text = "Form1";
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -70,5 +113,9 @@
 
         private Button button1;
         private Label lblEstado;
+        private MenuStrip menuStrip1;
+        private ToolStripMenuItem configuracionToolStripMenuItem;
+        private ToolStripMenuItem productosToolStripMenuItem;
+        private ToolStripMenuItem unidadesMedidaToolStripMenuItem;
     }
 }
