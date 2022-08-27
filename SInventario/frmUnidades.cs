@@ -13,7 +13,7 @@ namespace SInventario
 {
     public partial class frmUnidades : Form
     {
-        private Bd basedatos= new Bd(".", "bd_inventario", "sa", "");
+        private Bd basedatos= new Bd(".", "bd_inventario", "sa", "Univalle123$");
         public frmUnidades()
         {
             InitializeComponent();
@@ -23,7 +23,10 @@ namespace SInventario
         private void button1_Click(object sender, EventArgs e)
         {
 
-            basedatos.inserarUnidadMedida(txtNombre.Text,txtAbreviacion.Text);
+          if  ( basedatos.inserarUnidadMedida(txtNombre.Text,txtAbreviacion.Text))
+            {
+                MessageBox.Show("Se inserto con exito");
+            }
 
         }
     }

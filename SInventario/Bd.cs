@@ -81,10 +81,10 @@ namespace SInventario
         }
 
 
-        public Boolean inserarUnidadMedida(String nombre, String abreviacion)
+        public Boolean inserarUnidadMedida(string nombre, string abreviacion)
         {
 
-            String sql = "INSERT INTO unidades (nombre,abreviacion) values ('" + nombre + "','" + abreviacion +"' )";
+            string sql = "INSERT INTO unidades (nombre,abreviacion) values ('" + nombre + "','" + abreviacion +"' )";
                 
             try
             {
