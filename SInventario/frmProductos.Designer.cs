@@ -1,6 +1,6 @@
 ﻿namespace SInventario
 {
-    partial class Form2
+    partial class frmProductos
     {
         /// <summary>
         /// Required designer variable.
@@ -31,9 +31,9 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtNombre = new System.Windows.Forms.TextBox();
+            this.cbUnidades = new System.Windows.Forms.ComboBox();
+            this.txtPrecio = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
@@ -65,27 +65,28 @@
             this.label3.TabIndex = 2;
             this.label3.Text = "Unidad";
             // 
-            // textBox1
+            // txtNombre
             // 
-            this.textBox1.Location = new System.Drawing.Point(134, 66);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(131, 23);
-            this.textBox1.TabIndex = 3;
+            this.txtNombre.Location = new System.Drawing.Point(134, 66);
+            this.txtNombre.Name = "txtNombre";
+            this.txtNombre.Size = new System.Drawing.Size(131, 23);
+            this.txtNombre.TabIndex = 3;
             // 
-            // comboBox1
+            // cbUnidades
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(134, 203);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 23);
-            this.comboBox1.TabIndex = 4;
+            this.cbUnidades.FormattingEnabled = true;
+            this.cbUnidades.Location = new System.Drawing.Point(134, 203);
+            this.cbUnidades.Name = "cbUnidades";
+            this.cbUnidades.Size = new System.Drawing.Size(121, 23);
+            this.cbUnidades.TabIndex = 4;
+            this.cbUnidades.SelectedIndexChanged += new System.EventHandler(this.cbUnidades_SelectedIndexChanged);
             // 
-            // textBox2
+            // txtPrecio
             // 
-            this.textBox2.Location = new System.Drawing.Point(134, 137);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 23);
-            this.textBox2.TabIndex = 5;
+            this.txtPrecio.Location = new System.Drawing.Point(134, 137);
+            this.txtPrecio.Name = "txtPrecio";
+            this.txtPrecio.Size = new System.Drawing.Size(100, 23);
+            this.txtPrecio.TabIndex = 5;
             // 
             // button1
             // 
@@ -95,20 +96,21 @@
             this.button1.TabIndex = 6;
             this.button1.Text = "Registrar";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
-            // Form2
+            // frmProductos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtPrecio);
+            this.Controls.Add(this.cbUnidades);
+            this.Controls.Add(this.txtNombre);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Name = "Form2";
+            this.Name = "frmProductos";
             this.Text = "Form2";
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -120,9 +122,9 @@
         private Label label1;
         private Label label2;
         private Label label3;
-        private TextBox textBox1;
-        private ComboBox comboBox1;
-        private TextBox textBox2;
+        private TextBox txtNombre;
+        private ComboBox cbUnidades;
+        private TextBox txtPrecio;
         private Button button1;
     }
 }

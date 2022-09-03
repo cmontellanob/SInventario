@@ -2,9 +2,9 @@ using System.Data.SqlClient;
 
 namespace SInventario
 {
-    public partial class Form1 : Form
+    public partial class frmPrincipal : Form
     {
-        public Form1()
+        public frmPrincipal()
         {
             InitializeComponent();
         }
@@ -56,14 +56,15 @@ namespace SInventario
 
         private void productosToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            frmProductos fproductos = new frmProductos();
+            fproductos.Show();
         }
 
         private void unidadesMedidaToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
-            frmUnidades funidades = new frmUnidades();
-            funidades.Show();
+            frmListaUnidades flistaUnidades = new frmListaUnidades();
+            flistaUnidades.Show();
+          
         }
     }
 }

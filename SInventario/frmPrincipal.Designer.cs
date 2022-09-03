@@ -1,6 +1,6 @@
 ﻿namespace SInventario
 {
-    partial class Form1
+    partial class frmPrincipal
     {
         /// <summary>
         ///  Required designer variable.
@@ -91,7 +91,7 @@
             this.unidadesMedidaToolStripMenuItem.Text = "Unidades Medida";
             this.unidadesMedidaToolStripMenuItem.Click += new System.EventHandler(this.unidadesMedidaToolStripMenuItem_Click);
             // 
-            // Form1
+            // frmPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -100,8 +100,8 @@
             this.Controls.Add(this.button1);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.Name = "frmPrincipal";
+            this.Text = "Sistema de Inventarios";
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
