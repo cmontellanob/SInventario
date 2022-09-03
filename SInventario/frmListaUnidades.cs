@@ -39,5 +39,24 @@ namespace SInventario
         {
             dgvUnidades.DataSource = Bd.getInstancia().listarUnidadesMedida();
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
+
+        private void frmListaUnidades_FormClosed(object sender, FormClosedEventArgs e)
+        {
+          
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            int nrofila = dgvUnidades.CurrentCell.RowIndex;
+            
+
+
+
+        }
     }
 }

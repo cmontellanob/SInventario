@@ -4,6 +4,7 @@ namespace SInventario
 {
     public partial class frmPrincipal : Form
     {
+        
         public frmPrincipal()
         {
             InitializeComponent();
@@ -63,6 +64,7 @@ namespace SInventario
         private void unidadesMedidaToolStripMenuItem_Click(object sender, EventArgs e)
         {
             frmListaUnidades flistaUnidades = new frmListaUnidades();
+           
             flistaUnidades.Show();
           
         }

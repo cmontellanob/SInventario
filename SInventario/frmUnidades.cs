@@ -26,6 +26,7 @@ namespace SInventario
           if  ( Bd.getInstancia().insertarUnidadMedida(txtNombre.Text,txtAbreviacion.Text))
             {
                 MessageBox.Show("Se inserto con exito");
+                Close();
             }
 
         }
